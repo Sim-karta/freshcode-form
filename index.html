@@ -6,5 +6,93 @@
         <title>HTML-форми. Регулярні вирази</title>
         <link rel="stylesheet" href="./assets/styles/main.css" />
     </head>
-    <body></body>
+    <body>
+        <form class="form" action="#" method="post">
+            <div class="form__header">
+                <h2 class="form__title">Contact form</h2>
+                <p class="form__subtitle">
+                    Please fill in your information and we'll be sending your
+                    order.
+                </p>
+            </div>
+
+            <div class="form__body">
+                <div class="form__row form__row--name">
+                    <label class="form__label" for="first-name">
+                        <span class="form__text">Your name</span>
+                        <input
+                            class="form__input form__input--short"
+                            type="text"
+                            id="first-name"
+                            name="first_name"
+                            placeholder="first name"
+                        />
+                    </label>
+                    <label class="form__label" for="last-name">
+                        <input
+                            class="form__input form__input--short"
+                            type="text"
+                            id="last-name"
+                            name="last_name"
+                            placeholder="last name"
+                        />
+                    </label>
+                </div>
+
+                <div class="form__row">
+                    <label class="form__label" for="email">
+                        <span class="form__text">Your email</span>
+                        <input
+                            class="form__input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your_mail@mail.com"
+                        />
+                    </label>
+                </div>
+
+                <div class="form__row">
+                    <label class="form__label" for="phone">
+                        <span class="form__text">Phone *</span>
+                        <input
+                            class="form__input"
+                            type="tel"
+                            id="phone"
+                            name="phone_code"
+                            placeholder="012-345-6789"
+                        />
+                    </label>
+                </div>
+
+                <div class="form__row">
+                    <label class="form__label" for="subject">
+                        <span class="form__text">Message subject *</span>
+                        <select
+                            class="form__select"
+                            id="subject"
+                            name="subject"
+                            required
+                        >
+                            <option value="other" selected>Other</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form__row">
+                    <label class="form__label" for="message">
+                        <span class="form__text">Message *</span>
+                        <textarea
+                            class="form__textarea"
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </label>
+                </div>
+            </div>
+
+            <button class="form__button" type="submit">SUBMIT FORM</button>
+        </form>
+    </body>
 </html>
