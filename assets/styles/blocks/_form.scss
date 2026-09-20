@@ -1,0 +1,28 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70vw;
+    color: var(--color-light);
+    padding: 2rem 4rem;
+    border: 2px solid var(--color-light);
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__bg {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: -1;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

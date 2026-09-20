@@ -8,6 +8,7 @@
     </head>
     <body>
         <form class="form" action="#" method="post">
+            <div class="form__bg"></div>
             <div class="form__header">
                 <h2 class="form__title">Contact form</h2>
                 <p class="form__subtitle">
@@ -17,20 +18,20 @@
             </div>
 
             <div class="form__body">
-                <div class="form__row form__row--name">
-                    <label class="form__label" for="first-name">
-                        <span class="form__text">Your name</span>
+                <div class="form__row">
+                    <label class="form-field" for="first-name">
+                        <span class="form-field__label">Your name</span>
                         <input
-                            class="form__input form__input--short"
+                            class="form-field__input input input--short"
                             type="text"
                             id="first-name"
                             name="first_name"
                             placeholder="first name"
                         />
                     </label>
-                    <label class="form__label" for="last-name">
+                    <label class="form-field" for="last-name">
                         <input
-                            class="form__input form__input--short"
+                            class="form-field__input input input--short"
                             type="text"
                             id="last-name"
                             name="last_name"
@@ -40,10 +41,10 @@
                 </div>
 
                 <div class="form__row">
-                    <label class="form__label" for="email">
-                        <span class="form__text">Your email</span>
+                    <label class="form-field" for="email">
+                        <span class="form-field__label">Your email</span>
                         <input
-                            class="form__input"
+                            class="form-field__input input"
                             type="email"
                             id="email"
                             name="email"
@@ -53,23 +54,27 @@
                 </div>
 
                 <div class="form__row">
-                    <label class="form__label" for="phone">
-                        <span class="form__text">Phone *</span>
+                    <label class="fform-field" for="phone">
+                        <span
+                            class="form-field__label form-field__label--requrid"
+                            >Phone *</span
+                        >
                         <input
-                            class="form__input"
+                            class="form-field__input input"
                             type="tel"
                             id="phone"
                             name="phone_code"
                             placeholder="012-345-6789"
+                            required
                         />
                     </label>
                 </div>
 
                 <div class="form__row">
-                    <label class="form__label" for="subject">
-                        <span class="form__text">Message subject *</span>
+                    <label class="form-field" for="subject">
+                        <span class="form-field__label">Message subject *</span>
                         <select
-                            class="form__select"
+                            class="form-field__select"
                             id="subject"
                             name="subject"
                             required
@@ -80,10 +85,10 @@
                 </div>
 
                 <div class="form__row">
-                    <label class="form__label" for="message">
-                        <span class="form__text">Message *</span>
+                    <label class="form-field" for="message">
+                        <span class="form-field__label">Message *</span>
                         <textarea
-                            class="form__textarea"
+                            class="form-field__textarea"
                             id="message"
                             name="message"
                             required
@@ -92,7 +97,9 @@
                 </div>
             </div>
 
-            <button class="form__button" type="submit">SUBMIT FORM</button>
+            <button class="form__button button" type="submit">
+                SUBMIT FORM
+            </button>
         </form>
     </body>
 </html>
