@@ -25,4 +25,16 @@
         flex-direction: column;
         gap: 0.5rem;
     }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: solid 1px var(--color-light);
+    }
+
+    &__button {
+        margin-left: 8rem;
+    }
 }

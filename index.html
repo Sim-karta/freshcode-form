@@ -18,82 +18,80 @@
             </div>
 
             <div class="form__body">
-                <div class="form__row">
-                    <label class="form-field" for="first-name">
-                        <span class="form-field__label">Your name</span>
+                <div class="field">
+                    <label class="field__label" for="first-name"
+                        >Your name</label
+                    >
+                    <div class="field__row">
                         <input
-                            class="form-field__input input input--short"
+                            class="field__input"
                             type="text"
                             id="first-name"
                             name="first_name"
                             placeholder="first name"
                         />
-                    </label>
-                    <label class="form-field" for="last-name">
+                        <label
+                            class="field__label field__label--hidden"
+                            for="last-name"
+                        ></label>
                         <input
-                            class="form-field__input input input--short"
+                            class="field__input"
                             type="text"
                             id="last-name"
                             name="last_name"
                             placeholder="last name"
                         />
-                    </label>
+                    </div>
                 </div>
 
-                <div class="form__row">
-                    <label class="form-field" for="email">
-                        <span class="form-field__label">Your email</span>
-                        <input
-                            class="form-field__input input"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="your_mail@mail.com"
-                        />
-                    </label>
+                <div class="field field--full">
+                    <label class="field__label" for="email">Your email</label>
+                    <input
+                        class="field__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your_mail@mail.com"
+                    />
                 </div>
 
-                <div class="form__row">
-                    <label class="fform-field" for="phone">
-                        <span
-                            class="form-field__label form-field__label--requrid"
-                            >Phone *</span
-                        >
-                        <input
-                            class="form-field__input input"
-                            type="tel"
-                            id="phone"
-                            name="phone_code"
-                            placeholder="012-345-6789"
-                            required
-                        />
-                    </label>
+                <div class="field field--full">
+                    <label class="field__label" for="phone">Phone *</label>
+                    <input
+                        class="field__input"
+                        type="tel"
+                        id="phone"
+                        name="phone_code"
+                        placeholder="012-345-6789"
+                        required
+                    />
                 </div>
 
-                <div class="form__row">
-                    <label class="form-field" for="subject">
-                        <span class="form-field__label">Message subject *</span>
-                        <select
-                            class="form-field__select"
-                            id="subject"
-                            name="subject"
-                            required
-                        >
-                            <option value="other" selected>Other</option>
-                        </select>
-                    </label>
+                <div class="field field--full">
+                    <label class="field__label" for="subject"
+                        >Message subject *</label
+                    >
+                    <select
+                        class="field__select"
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+                        <option value="other" selected>Other</option>
+                        <option value="other">Review</option>
+                        <option value="other">Complaint</option>
+                        <option value="other">Gratitude</option>
+                    </select>
                 </div>
 
-                <div class="form__row">
-                    <label class="form-field" for="message">
-                        <span class="form-field__label">Message *</span>
-                        <textarea
-                            class="form-field__textarea"
-                            id="message"
-                            name="message"
-                            required
-                        ></textarea>
-                    </label>
+                <div class="field field--full">
+                    <label class="field__label" for="message">Message *</label>
+                    <textarea
+                        class="field__textarea"
+                        id="message"
+                        name="message"
+                        required
+                    ></textarea>
                 </div>
             </div>
 
