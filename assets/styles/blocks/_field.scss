@@ -1,0 +1,42 @@
+.field {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    &__row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__label {
+        min-width: 7rem;
+        font-size: 0.9rem;
+        color: var(--color-light);
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        width: 100%;
+        min-height: var(--input-height);
+        border: 2px solid var(--color-light);
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: var(--color-dark);
+        font: inherit;
+    }
+
+    &__textarea {
+        min-height: 7rem;
+        resize: vertical;
+    }
+}

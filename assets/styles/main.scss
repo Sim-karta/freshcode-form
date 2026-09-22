@@ -2,3 +2,7 @@
 @use "variables";
 @use "utils";
 @use "globals";
+
+@use "./blocks/form";
+@use "./blocks/button";
+@use "./blocks/field";
