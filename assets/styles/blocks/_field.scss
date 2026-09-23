@@ -35,6 +35,18 @@
         font: inherit;
     }
 
+    &__input:user-invalid,
+    &__select:user-invalid,
+    &__textarea:user-invalid {
+        border-color: var(--color-invalid);
+    }
+
+    &__input:user-valid,
+    &__select:user-valid,
+    &__textarea:user-valid {
+        border-color: var(--color-valid);
+    }
+
     &__textarea {
         min-height: 7rem;
         resize: vertical;
