@@ -289,10 +289,10 @@ a[class] {
   color: var(--color-dark);
   font: inherit;
 }
-.field__input:invalid, .field__select:invalid, .field__textarea:invalid {
+.field__input:user-invalid, .field__select:user-invalid, .field__textarea:user-invalid {
   border-color: var(--color-invalid);
 }
-.field__input:valid, .field__select:valid, .field__textarea:valid {
+.field__input:user-valid, .field__select:user-valid, .field__textarea:user-valid {
   border-color: var(--color-valid);
 }
 .field__textarea {

@@ -35,15 +35,15 @@
         font: inherit;
     }
 
-    &__input:invalid,
-    &__select:invalid,
-    &__textarea:invalid {
+    &__input:user-invalid,
+    &__select:user-invalid,
+    &__textarea:user-invalid {
         border-color: var(--color-invalid);
     }
 
-    &__input:valid,
-    &__select:valid,
-    &__textarea:valid {
+    &__input:user-valid,
+    &__select:user-valid,
+    &__textarea:user-valid {
         border-color: var(--color-valid);
     }
 
