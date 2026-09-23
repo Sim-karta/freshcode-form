@@ -163,7 +163,8 @@ svg * {
   --color-light: #ffffff;
   --color-light-10: #e3e3e3;
   --color-gray: #878787;
-  --color-error: #ba3737;
+  --color-invalid: #ba3737;
+  --color-valid: #5dbb63;
   --input-height: 2rem;
   --font-family: Verdana, Tahoma, sans-serif;
   --transition-duration: 0.2s;
@@ -287,6 +288,12 @@ a[class] {
   padding: 5px 10px;
   color: var(--color-dark);
   font: inherit;
+}
+.field__input:invalid, .field__select:invalid, .field__textarea:invalid {
+  border-color: var(--color-invalid);
+}
+.field__input:valid, .field__select:valid, .field__textarea:valid {
+  border-color: var(--color-valid);
 }
 .field__textarea {
   min-height: 7rem;

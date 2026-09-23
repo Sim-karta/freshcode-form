@@ -29,6 +29,10 @@
                             id="first-name"
                             name="first_name"
                             placeholder="first name"
+                            required
+                            pattern="^[A-ZА-ЯЁІЇЄҐ][A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{1,29}(-[A-ZА-ЯЁІЇЄҐ][A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{1,29})?$"
+                            minlength="2"
+                            maxlength="30"
                         />
                         <label
                             class="field__label field__label--hidden"
@@ -40,6 +44,10 @@
                             id="last-name"
                             name="last_name"
                             placeholder="last name"
+                            required
+                            pattern="^[A-ZА-ЯЁІЇЄҐ][A-Za-zА-Яа-яЁёІіЇїЄєҐґ'-]{1,29}$"
+                            minlength="2"
+                            maxlength="30"
                         />
                     </div>
                 </div>
@@ -52,6 +60,8 @@
                         id="email"
                         name="email"
                         placeholder="your_mail@mail.com"
+                        required
+                        maxlength="50"
                     />
                 </div>
 
@@ -64,6 +74,9 @@
                         name="phone_code"
                         placeholder="012-345-6789"
                         required
+                        pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+                        minlength="12"
+                        maxlength="12"
                     />
                 </div>
 
@@ -77,10 +90,13 @@
                         name="subject"
                         required
                     >
-                        <option value="other" selected>Other</option>
-                        <option value="other">Review</option>
-                        <option value="other">Complaint</option>
-                        <option value="other">Gratitude</option>
+                        <option value="" selected>
+                            --Please choose an option--
+                        </option>
+                        <option value="other">Other</option>
+                        <option value="review">Review</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="gratitude">Gratitude</option>
                     </select>
                 </div>
 
@@ -91,6 +107,8 @@
                         id="message"
                         name="message"
                         required
+                        minlength="10"
+                        maxlength="500"
                     ></textarea>
                 </div>
             </div>
